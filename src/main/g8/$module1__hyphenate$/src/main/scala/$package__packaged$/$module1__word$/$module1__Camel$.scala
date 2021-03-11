@@ -4,5 +4,4 @@ trait $module1;format="Camel"$ {
 
   def foo: String = "foo"
 
-
 }
