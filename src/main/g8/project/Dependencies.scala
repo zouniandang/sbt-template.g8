@@ -2,8 +2,8 @@ import sbt._
 
 object Dependencies {
   lazy val version = new {
-    val scalaTest = "3.2.6"
-    val scalaCheck = "1.15.3"
+    val scalaTest = "3.2.13"
+    val scalaCheck = "1.17.0"
   }
 
   lazy val library = new {
