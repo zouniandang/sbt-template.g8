@@ -16,11 +16,6 @@ object Settings {
     Test / parallelExecution := false
   )
 
-  lazy val itSettings = Defaults.itSettings ++ Seq(
-    IntegrationTest / logBuffered := false,
-    IntegrationTest / fork := true
-  )
-
   lazy val assemblySettings = Seq(
     assembly / test := {},
     assembly / assemblyOption ~= {

@@ -1,6 +1,7 @@
 import Dependencies._
 
 ThisBuild / resolvers ++= Seq(
+  "AliYun snapshots" at "https://maven.aliyun.com/nexus/content/groups/public/",
   "Sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/",
   "Apache Development Snapshot Repository" at "https://repository.apache.org/content/repositories/snapshots/",
   Resolver.mavenLocal
@@ -24,5 +25,4 @@ lazy val $appname;format="camel"$ = (project in file("$appname;format="hyphenate
   .settings(Settings.$appname;format="camel"$Settings: _*)
   .settings(libraryDependencies ++= $appname;format="camel"$Dependencies)
   .dependsOn($module1;format="camel"$, $module2;format="camel"$)
-  .configs(IntegrationTest)
   .configs(Test)

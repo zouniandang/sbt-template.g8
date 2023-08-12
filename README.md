@@ -6,7 +6,15 @@ An assembly plugin is referenced for building uber-jar of the application.
 
 ## Usage
 
-```sbt new zouniandang/sbt-template.g8```
+```
+sbt new zouniandang/sbt-template.g8
+```
+or
+
+```
+sbt new file://./sbt-template.g8
+sbt new file:////<some_path>/sbt-template.g8
+```
 
 You can then run:
 
